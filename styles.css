@@ -1,9 +1,10 @@
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 .dropdown a{
-  color: white;
+  color: black;
   text-align: left;
   text-decoration: none;
   display: block;
@@ -54,7 +55,7 @@ h2,h4{
 }
 .header-container{
   background-color: hsl(356, 100%, 66%);
-  background-image: url(/images/bg-pattern-intro-desktop.svg);
+  background-image: url(bg-pattern-intro-desktop.svg);
   background-size: 370vh;
   background-position:310vh 205vh; 
   color: white;
@@ -62,7 +63,7 @@ h2,h4{
   display: grid;
   grid-template-rows: 10vh 50vh;
   border-radius: 0px 0px 0px 10vh;
-  height: 60vh; 
+  height: 65vh; 
 }
 .heading-text{
   display: grid;
@@ -88,7 +89,7 @@ h2,h4{
   border-style: none;
 }
 #learn-more-btn{
-  color:#f9f9f9;
+ 
   background-color: transparent;
   border-style: solid;
   border-color: hsl(0, 8%, 93%)
@@ -147,7 +148,7 @@ h2,h4{
   display: flex;
   flex-direction: row-reverse;
   gap: 10vh;
-  background-image: url(/images/bg-pattern-circles.svg);
+  background-image: url(bg-pattern-circles.svg);
   background-size: 150vh;
   background-position: -31vh -60vh;
   background-repeat: no-repeat;
@@ -226,3 +227,6 @@ a{
 .footer-list a{
   margin-top: 2vh;
 }
+
+
+

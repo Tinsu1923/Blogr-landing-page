@@ -1,6 +1,10 @@
 
+#blogr{
+  font-size: 28px;
+  font-weight: 600;
+}
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Overpass",Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 .dropdown a{
@@ -55,7 +59,7 @@ h2,h4{
 }
 .header-container{
   background-color: hsl(356, 100%, 66%);
-  background-image: url(bg-pattern-intro-desktop.svg);
+  background-image: url(images/bg-pattern-intro-desktop.svg);
   background-size: 370vh;
   background-position:310vh 205vh; 
   color: white;
@@ -77,7 +81,7 @@ h2,h4{
   height: 6vh;
 }
 .heading-buttons button{
-  
+  cursor: pointer;
   width: 20vh;
   height: 6vh;
   border-radius:40vh;
@@ -95,9 +99,11 @@ h2,h4{
   border-color: hsl(0, 8%, 93%)
 }
 #learn-more-btn:hover{
+  transition: 0.4s;
   background-color: hsl(356, 96%, 37%);
 }
 .sign-up-button{
+  cursor: pointer;
   color: hsl(356, 67%, 52%);
   background-color: hsl(0, 0%, 100%);
   width: 15vh;

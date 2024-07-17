@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex flex-col items-center ml-0 rounded-bl-2xl bg-red-400 bg-[url('../images/bg-pattern-intro-desktop.svg')] bg-[length:370vh] bg-center text-white h-96">
+    <div class="flex justify-between items-center h-16 w-full">
+      <ul class="flex gap-10 list-none mt-8 ml-16">
+        <li id="blogr">Blogr</li>
+        <li class="relative group">
+          <a href="#" class="dropdown-head">Product</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Overview</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Pricing</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketplace</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Features</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Integrations</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#" class="dropdown-head">Company</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">About</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Team</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Blog</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Careers</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <a href="#" class="dropdown-head">Connect</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Contact</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Newsletter</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="flex gap-1 mt-8 mr-16">
+        <li><a href="#">Login</a></li>
+        <li><button class="sign-up-button">Sign Up</button></li>
+      </ul>
+    </div>
+    <div class="flex flex-col items-center mb-1 text-center p-12">
+      <h1>A modern publishing platform</h1>
+      <p>Grow your audience and build your online brand</p>
+    </div>
+    <div class="flex flex-wrap items-center justify-center ">
+      <button id="start-for-free-btn" class="rounded-4xl border-solid border-white w-30 h-10">Start for Free</button>
+      <button id="learn-more-btn" class="cursor-pointer rounded-3xl border-solid border-white w-30 h-10">Learn More</button>
+    </div>
+  </div>
+</body>
+</html>

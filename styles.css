@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 #blogr{
   font-size: 28px;
   font-weight: 600;
@@ -7,7 +9,7 @@ body{
   font-family: "Overpass",Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-.dropdown a{
+.dropdown a {
   color: black;
   text-align: left;
   text-decoration: none;
@@ -15,76 +17,136 @@ body{
   padding: 2vh 16px;
   background-color: white;
 }
-.dropdown a:hover{
+
+.dropdown a:hover {
   background-color: #f1f1f1;
 }
+
 .dropdown-head {
   text-decoration: none;
   padding: 10px;
   color: white;
+  display: inline-block; /* Ensure the anchor takes up its content width */
 }
-.dropdown-elements{
-  position: relative;
-  display: inline-block;
+
+li {
+  position: relative; /* Necessary for the absolute positioning of the dropdown */
 }
-.dropdown-elements:hover .dropdown{
-  display: block;
+
+li:hover .dropdown {
+  display: block; /* Show the dropdown when hovering over the list item */
 }
-.dropdown{
+
+.dropdown {
+  top: 90%;
+  left: 0;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 h2,h4{
   color: hsl(208, 49%, 24%)
 }
 .dropdown:hover{
   background-color: #f9f9f9;
 }
-.header-2{
-  text-align: center;
-  font-size: 6vh;
-  height: 8vh;
-  padding-top: 20px;
-  width: 190vh;
-}
-.header-sentence{
-  width: 186vh;
-  text-align:center;
-  font-size: 3vh;
-  height:3vh;
-}
 .header-container{
+  margin-top: 0;
   background-color: hsl(356, 100%, 66%);
   background-image: url(images/bg-pattern-intro-desktop.svg);
-  background-size: 370vh;
-  background-position:310vh 205vh; 
+  background-size: 110rem;
+  background-position: center; 
   color: white;
-  width: 210vh;
-  display: grid;
-  grid-template-rows: 10vh 50vh;
-  border-radius: 0px 0px 0px 10vh;
-  height: 65vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0px 0px 0px 64px;
+  height: 24rem; 
 }
+.navigation-bar {
+  width: 100%;
+  height: 64px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between; /* Distribute space between logo and nav items */
+  align-items: center; /* Center items vertically */
+}
+
+.navigation-bar ul {
+  margin-top: 32px;
+  margin-left: 64px;
+  display: flex;
+  gap: 40px; /* Add spacing between items */
+  list-style-type: none; /* Remove default list styling */
+}
+
+.navigation-bar .left-nav {
+  
+  border: 2px solid yellow;
+  flex: 0.8; /* Take up available space */
+  display: flex;
+  gap: 2vh;
+}
+
+.navigation-bar .right-nav {
+  flex: 0.3;
+  border: 2px solid green;
+  display: flex;
+  gap: 2vh;
+}
+
+.navigation-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar .left-nav li:nth-child(1) {
+  flex: 0 0 25vh; /* Fixed width */
+}
+
+.navigation-bar .left-nav li:nth-child(2),
+.navigation-bar .left-nav li:nth-child(3) {
+  flex: 0 0 20vh; /* Fixed width */
+}
+
+.navigation-bar .left-nav li:nth-child(4) {
+  flex: 0 0 10vh; /* Take remaining space */
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.navigation-bar .right-nav li:nth-child(1),
+.navigation-bar .right-nav li:nth-child(2) {
+  flex: 0 0 3vh; /* Fixed width */
+}
+
+
 .heading-text{
-  display: grid;
-  grid-template-rows:15vh 10vh;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  border: 2px solid blue;
+  text-align: center;
 }
-.heading-buttons{
+
+.heading-buttons-container{
+  border-style: dashed;
   display: flex;
   justify-content: center;
-  width: 190vh;
-  height: 6vh;
+  align-items: center;
 }
-.heading-buttons button{
+.heading-buttons{
   cursor: pointer;
-  width: 20vh;
-  height: 6vh;
-  border-radius:40vh;
+  width: 120px;
+  height: 40px;
+  border-radius:2.5rem;
+  margin: 8px;
 }
 #start-for-free-btn{
   color: hsl(356, 100%, 66%);
@@ -100,74 +162,68 @@ h2,h4{
 }
 #learn-more-btn:hover{
   transition: 0.4s;
-  background-color: hsl(356, 96%, 37%);
+  background-color: hsl(356, 95%, 42%);
 }
 .sign-up-button{
   cursor: pointer;
   color: hsl(356, 67%, 52%);
   background-color: hsl(0, 0%, 100%);
-  width: 15vh;
-  height: 5vh;
+  width: 80px;
+  height: 32px;
   border-style: none;
   border-radius: 20px 20px 20px 20px;
   margin-top: -3vh;
 }
-#navbar{
-  border-color: black;
-}
-.navigation-bar ul{
-  margin-top: 4vh;
-  margin-left: 13vh;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 20vh 15vh 15vh 90vh 8vh;
-  gap: 2vh;
-}
+
 #designed{
-  width: 170vh;
-  text-align: center;    
-  margin-top: -25vh;
+  width: 900px;
+  text-align: center;
+  margin-left: 4.75rem;    
+  margin-top: -96px;
+  border: 2px solid blue;
 }
 .first-division-text{
-  margin-left: 15vh;
-  width: 75vh;
-  height: 40vh;
+  border: 2px solid blue;
+  margin-left: 96px;
+  width: 500px;
+  height: 360px;
 }
 .first-division{
-  display: flex;
-  gap: 20vh;
-  width: 210vh;
+  border: 2px solid green;
   align-items: center;
-  height: 120vh;
+  display: flex;
+  gap: 80px;
+  height: 732px;
+  width: 1200px;
 }
 .first-division-image img{
-  width: 92vh;
-  height: 72vh;
-  background-position: 20vh -20vh;
+  width: 560px;
+  height: 480px;
+  border: 2px solid blue;
 }
 .second-division{
   padding-bottom: -20vh;
   border-radius: 0 10vh 0 0;
   background-color:hsl(237, 17%, 21%);
-  width: 210vh;
-  height: 70vh;
+  width: 1200px;
+  height: 490px;
   display: flex;
   flex-direction: row-reverse;
-  gap: 10vh;
-  background-image: url(bg-pattern-circles.svg);
+  gap: 80px;
+  background-image: url(images/bg-pattern-circles.svg);
   background-size: 150vh;
-  background-position: -31vh -60vh;
+  background-position: -176px -368px;
   background-repeat: no-repeat;
 }
 .second-division-text{
   color: hsl(0, 0%, 100%);
-  margin-right: 8vh;
-  padding-top: 20vh;
-  width: 90vh;
+  margin-right: 64px;
+  padding-top: 128px;
+  width: 640px;
 }
 .second-division-phones{
   margin-top: -10vh;
-  margin-right: 6vh;
+  margin-left: 48px;
 }
 #phones-img{
   width: 90vh;

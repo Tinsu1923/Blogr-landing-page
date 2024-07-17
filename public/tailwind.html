@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogr</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="font-overpass">
+  <div class="flex flex-col items-center ml-0 rounded-bl-[64px] bg-light-red bg-[url('../images/bg-pattern-intro-desktop.svg')] bg-110 bg-center text-white h-[26rem]">
+    <div class="flex justify-between items-center h-16 w-[100%] "><!--Nav Bar-->
+      <ul class="flex gap-10 list-none mt-8 ml-16  pl-2 pt-3 w-auto pr-4">
+        <li class="font-serif text-3xl pr-5 pl-2 font-semibold">Blogr</li>
+        <li class="relative group pl-5 pt-2">
+          <a href="#" class="dropdown-head">Product</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Overview</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Pricing</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Marketplace</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Features</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Integrations</a>
+          </div>
+        </li>
+        <li class="relative group pl-3 pt-2 ml-5 pr-4">
+          <a href="#" class="dropdown-head">Company</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">About</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Team</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Blog</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Careers</a>
+          </div>
+        </li>
+        <li class="relative group pl-6 pt-2 ml-2 pr-4">
+          <a href="#" class="dropdown-head">Connect</a>
+          <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Contact</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">Newsletter</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-200">LinkedIn</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="flex flex-0.3 gap-4  mt-8  w-24 pt-5 pb-8 pr-5 mr-10">
+        <li class=" pt-2"><a href="#">Login</a></li>
+        <li><button class="bg-white rounded-3xl w-24 h-9 text-red-500">Sign Up</button></li>
+      </ul>
+    </div>
+    <div class="flex flex-col items-center mb-1 text-center p-12">
+      <h1 class="text-3xl text-center">A modern publishing platform</h1>
+      <p class="pt-3">Grow your audience and build your online brand</p>
+    </div>
+    <div class="flex flex-wrap items-center justify-center ">
+      <button id="start-for-free-btn" class="rounded-4xl border-solid border-white border-2 bg-white text-red-500 w-30 h-10">Start for Free</button>
+      <button id="learn-more-btn" class="cursor-pointer ml-2 rounded-3xl border-solid border-white border-2 text-black hover:bg-red-600 duration-500 ease-in w-30 h-10">Learn More</button>
+    </div>
+  </div>
+  <div class="flex items-center gap-20 w-300 h-183 border-blue-600 border-dotted border-4"><!--First Division-->
+    <div class="flex flex-col justify-center mb-1 w-140 h-96 pl-10 ml-12 border-blue-900 border-dotted border-4 text-start"><!--First-division-text-->
+        <h2 class="mt-[-96px] text-center  ml-[18rem] w-[30rem] font-bold text-2xl text-dark-gray">Designed for the future</h2>
+                <p class="pt-16"></p>
+                <h4 class="pt-10 text-dark-gray">Introducing an extensible editor</h4>
+                
+                <p class="pt-5">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.
+                </p>
+            <h4 class="pt-5 text-dark-gray">Robust content management</h4>
+            <p class="pt-5">
+                Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </p>
+    </div>
+    <div class="w-[50rem] h-[140] flex flex-1">
+        <img src="../images/illustration-editor-mobile.svg" alt="Editor Illustration" class="w-[45rem] h-[27rem] flex flex-1">
+    </div>
+</div>
+<div class="flex flex-row-reverse w-[75rem] h-[30.625rem] bg-dark-gray rounded-tr-[64px] bg-[url(../images/bg-pattern-circles.svg)] bg-no-repeat bg-[-200px_-23rem]">
+    <div class="flex flex-wrap w-[35rem] h-[30rem] pt-[8rem]  border-blue-700 border-4 border-dotted text-white">
+        <h3 class="w-300 text-2xl">State of the Art Infrastructure</h3>
+        <p class="mt-[-8rem] ">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+    </div>
+    <div class="ml--24 w-[38rem] h-[33rem] border-blue-700 border-4 border-dotted">
+        <img src="../images/illustration-phones.svg" class="mt-[-4rem] h-[36.625rem] ">
+    </div>
+</div>
+</body>
+</html>
